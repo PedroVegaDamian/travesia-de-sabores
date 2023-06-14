@@ -12,9 +12,9 @@
     "lintstaged": "lint-staged --concurrent false"
   },
   "engines": {
-    "node": ">= v18.15.0",
+    "node": ">= v18",
     "npm": "please-use-yarn",
-    "yarn": ">= 1.22.19"
+    "yarn": ">= 1.22"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.3",
