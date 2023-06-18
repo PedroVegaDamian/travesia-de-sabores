@@ -3,11 +3,16 @@ import { StoriesResponse } from '~/types/Recipes'
 const config = useRuntimeConfig()
 
 export default defineEventHandler(async event => {
-  return await $fetch<StoriesResponse>(config.apiUrl, {
-    query: {
-      token: config.token,
-      version: config.version,
-      with_tag: event.context.params?.category
-    }
-  })
+  const queryEvent = getQuery(event)
+  let query: Record<string, string | undefined> = {
+    token: config.token,
+    version: config.version,
+    with_tag: event.context.params?.category
+  }
+
+  if (queryEvent.term) {
+    query = { ...query, 'filter_query[title][like]': `*${queryEvent.term}*` }
+  }
+
+  return await $fetch<StoriesResponse>(config.apiUrl, { query })
 })

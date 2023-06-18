@@ -1,8 +1,15 @@
 <script setup lang="ts">
 const recipeToSearch = ref('')
 
+const emit = defineEmits<{
+  (e: 'on-search', value: string): void
+}>()
+
 const searchRecipe = () => {
-  recipeToSearch.value = ''
+  if (recipeToSearch.value.length > 0) {
+    emit('on-search', recipeToSearch.value)
+    recipeToSearch.value = ''
+  }
 }
 </script>
 

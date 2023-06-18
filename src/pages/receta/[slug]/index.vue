@@ -23,6 +23,7 @@ useHead({
     :width="640"
     :height="360"
   />
+  <h2>Ingredientes:</h2>
   <ul>
     <li
       v-for="(ingredient, index) in data?.story.content.ingredients.items"
@@ -31,6 +32,7 @@ useHead({
       {{ ingredient }}
     </li>
   </ul>
+  <h2>Preparación:</h2>
   <ol>
     <li
       v-for="(step, index) in data?.story.content.procedure.items"
