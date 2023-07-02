@@ -34,7 +34,7 @@ const handleClick = async () => {
   <RecipeCategories />
 
   <div class="flex items-start justify-between max-[400px]:block">
-    <h1>Lista de Recetas</h1>
+    <h1 class="max-lg:ml-8">Lista de Recetas</h1>
     <span
       v-show="term.length > 0"
       class="relative mr-2 mt-4 inline-block rounded-xl border px-2 text-sm max-[400px]:mb-4 max-[400px]:mt-0"

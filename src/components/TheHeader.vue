@@ -1,6 +1,6 @@
 <template>
   <header
-    class="h-[80px] border-b border-b-secondary border-opacity-10 dark:border-b-primary dark:border-opacity-10"
+    class="h-[80px] border-b border-b-secondary border-opacity-10 dark:border-b-primary dark:border-opacity-10 max-lg:px-8"
   >
     <div class="mx-auto flex h-full max-w-5xl items-center justify-between">
       <NuxtLink
@@ -15,7 +15,6 @@
         </p>
       </NuxtLink>
       <div class="flex gap-5">
-        <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/">Recetas</NuxtLink>
       </div>
     </div>

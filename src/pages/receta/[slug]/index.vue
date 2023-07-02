@@ -13,32 +13,34 @@ useHead({
 </script>
 
 <template>
-  <h1>{{ data?.story.content.title }}</h1>
-  <p style="white-space: pre-wrap">
-    {{ data?.story.content.description }}
-  </p>
-  <NuxtImg
-    :src="data?.story.content.image.filename"
-    :alt="data?.story.content.image.alt"
-    :width="640"
-    :height="360"
-  />
-  <h2>Ingredientes:</h2>
-  <ul>
-    <li
-      v-for="(ingredient, index) in data?.story.content.ingredients.items"
-      :key="index"
-    >
-      {{ ingredient }}
-    </li>
-  </ul>
-  <h2>Preparación:</h2>
-  <ol>
-    <li
-      v-for="(step, index) in data?.story.content.procedure.items"
-      :key="index"
-    >
-      {{ step }}
-    </li>
-  </ol>
+  <div class="max-lg:mx-8">
+    <h1>{{ data?.story.content.title }}</h1>
+    <p style="white-space: pre-wrap">
+      {{ data?.story.content.description }}
+    </p>
+    <NuxtImg
+      :src="data?.story.content.image.filename"
+      :alt="data?.story.content.image.alt"
+      :width="640"
+      :height="360"
+    />
+    <h2>Ingredientes:</h2>
+    <ul>
+      <li
+        v-for="(ingredient, index) in data?.story.content.ingredients.items"
+        :key="index"
+      >
+        {{ ingredient }}
+      </li>
+    </ul>
+    <h2>Preparación:</h2>
+    <ol>
+      <li
+        v-for="(step, index) in data?.story.content.procedure.items"
+        :key="index"
+      >
+        {{ step }}
+      </li>
+    </ol>
+  </div>
 </template>

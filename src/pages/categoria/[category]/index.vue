@@ -44,7 +44,7 @@ const handleClick = async () => {
   <SearcherOfRecipes @on-search="search" />
 
   <div class="flex items-start justify-between max-[400px]:block">
-    <h1>Recetas de {{ route.params.category }}</h1>
+    <h1 class="max-lg:ml-8">Recetas de {{ route.params.category }}</h1>
     <span
       v-show="term.length > 0"
       class="relative mr-2 mt-4 inline-block rounded-xl border px-2 text-sm max-[400px]:mb-4 max-[400px]:mt-0"
