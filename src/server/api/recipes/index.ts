@@ -1,4 +1,4 @@
-import { StoriesResponse } from '~/types/Recipes'
+import type { StoriesResponse } from '~/types/Recipes'
 
 const config = useRuntimeConfig()
 

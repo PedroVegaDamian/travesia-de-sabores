@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Story } from '~/types/Recipes'
+import type { Story } from '~/types/Recipes'
 
 interface Props {
   recipe: Story

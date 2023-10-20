@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { StoriesResponse } from '~/types/Recipes'
+import type { StoriesResponse } from '~/types/Recipes'
 
 useHead({
   title: 'Inicio'

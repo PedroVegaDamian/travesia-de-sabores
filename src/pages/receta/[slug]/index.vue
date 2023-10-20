@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { StoryResponse } from '~/types/Recipes'
+import type { StoryResponse } from '~/types/Recipes'
 
 const route = useRoute('receta-slug')
 

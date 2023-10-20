@@ -8,11 +8,14 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true
   },
+  routeRules: {
+    '/': { prerender: true }
+  },
   modules: [
     'nuxt-icon',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
-    '@nuxt/image-edge'
+    '@nuxt/image'
   ],
   css: ['@/assets/css/tailwind.css'],
   image: {
