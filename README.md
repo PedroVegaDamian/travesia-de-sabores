@@ -1,42 +1,43 @@
-# Nuxt 3 Minimal Starter
+# Travesía de Sabores
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Bienvenido a **Travesía de Sabores**, una página web dedicada a la recopilación y presentación de recetas de platos peruanos. Este proyecto fue desarrollado como parte de mi portafolio para demostrar mis habilidades en desarrollo web usando Nuxt y TailwindCSS.
 
-## Setup
+## Descripción del Proyecto
 
-Make sure to install the dependencies:
+**Travesía de Sabores** es una plataforma interactiva que permite a los usuarios explorar una variedad de recetas peruanas. La página está diseñada para ser intuitiva y fácil de navegar, ofreciendo varias funcionalidades para mejorar la experiencia del usuario.
 
-```bash
-# yarn
-yarn install
+### Funcionalidades Principales
 
-# npm
-npm install
+1. **Listado de Platos**: Un listado completo de recetas de platos peruanos.
+2. **Buscador**: Un buscador que permite a los usuarios encontrar recetas específicas por nombre.
+3. **Filtros por Categoría**: Secciones dedicadas para filtrar recetas por tipo, incluyendo:
+   - Arroces
+   - Sopas
+   - Entradas
+4. **Modo Oscuro**: Una opción de modo oscuro para mejorar la experiencia de visualización en condiciones de poca luz.
 
-# pnpm
-pnpm install
-```
+## Tecnologías Utilizadas
 
-## Development Server
+- **Nuxt**: Framework de Vue.js utilizado para la creación de aplicaciones web universales.
+- **TailwindCSS**: Framework de CSS para el diseño de interfaces de usuario altamente personalizables y responsivas.
 
-Start the development server on `http://localhost:3000`
+## Instalación y Ejecución
 
-```bash
-npm run dev
-```
+Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
 
-## Production
+1. **Clonar el repositorio**:
 
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+   ```bash
+   git clone https://github.com/PedroVegaDamian/travesia-de-sabores.git
+   ```
+   
+2. **Instalar las dependencias**:
+   ```bash
+   cd travesia-de-sabores
+   yarn install
+   ```
+   
+3. **Ejecutar el servidor de desarrollo**:
+   ```bash
+   yarn dev
+   ```
